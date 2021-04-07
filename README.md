@@ -63,7 +63,7 @@ php-fpm                          php-fpm7 -F                      Up      0.0.0.
 You can access Nginx and Symfony application logs in the following directories on your host machine:
 
 * `logs/nginx`
-* `logs/symfony`
+* `logs/php-fpm`
 
 # Use Kibana!
 

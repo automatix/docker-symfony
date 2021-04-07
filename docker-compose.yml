@@ -22,7 +22,7 @@ services:
             - "9000:9001"
         volumes:
             - ./app:/var/www/app:cached
-            - ./logs/symfony:/var/www/app/var/log:cached
+            - ./logs/php-fpm:/var/www/app/var/log:cached
         depends_on:
             - db
 
@@ -53,7 +53,7 @@ services:
         volumes:
             - ./elk/logstash/pipelines.yml:/usr/share/logstash/config/pipelines.yml:cached
             - ./elk/logstash/conf.d:/etc/logstash/conf.d:cached
-            - ./logs/symfony:/var/www/app/var/log:cached
+            - ./logs/php-fpm:/var/www/app/var/log:cached
             - ./logs/nginx:/var/log/nginx:cached
 
     kibana:
