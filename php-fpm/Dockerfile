@@ -48,7 +48,7 @@ COPY xdebug.ini  /etc/php8/conf.d/
 
 COPY app.pool.conf /etc/php8/php-fpm.d/
 
-WORKDIR /var/www/symfony
+WORKDIR /var/www/app
 
 CMD ["php-fpm8", "-F"]
 
