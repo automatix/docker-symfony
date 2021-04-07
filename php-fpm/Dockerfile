@@ -46,7 +46,7 @@ COPY custom.ini /etc/php8/conf.d/
 COPY custom.ini /etc/php8/cli/conf.d/
 COPY xdebug.ini  /etc/php8/conf.d/
 
-COPY symfony.pool.conf /etc/php8/php-fpm.d/
+COPY app.pool.conf /etc/php8/php-fpm.d/
 
 WORKDIR /var/www/symfony
 
